@@ -4,19 +4,26 @@ options(tidyverse.quiet = TRUE)
 
 source("R/functions_data_cleaning.R")
 
-tar_option_set(packages = c("dplyr","magrittr","purrr", "readr", "rgbif","taxize"))
+tar_option_set(packages = c("dplyr","magrittr", "occOutliers","purrr", "readr", "rgbif","taxize", "terra"))
 list(
   tar_target(
     raw_data_file,
-    "data/Species.csv",
+    "data/SpeciesMin.csv",
     format = "file"
   ),
   tar_target(
-    raw_data,
-    read_csv(raw_data_file, col_types = cols())
+    Occs,
+    Taxa_validation_and_retrieval(raw_data_file)
   ),
+  tar_target(Cleaned_taxonomy,
+             Occs$Cleanded),
   tar_target(
-    cleaned_presences,
-    Data_retrieval_and_cleaning(raw_data)
-  )
+    raw_spatial_file,
+    "data/Worldclim.tif",
+    format = "file"
+  ),
+  tar_target(Stack,
+             raster::stack(raw_spatial_file)),
+  tar_target(Cleaned_data,
+             Clean_Occurrences(Occurrences = Occs$Occs, Stack = Stack))
 )

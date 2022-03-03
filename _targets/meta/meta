@@ -1,0 +1,15 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
+raw_data|stem|272990ffbe4ff3d4|000ed0cc054f0d35|24762bb7acc8044e|-979620141||t19053.7873677742s|001e75d0cb0314f6|633|rds|vector|||0.421||
+.Random.seed|object|897e00925435f5a6||||||||||||||
+cleaned_taxonomy|stem|e71dfd670b435d50|34ac7f4a4db3fa06|acb0828da5f8fe7c|813781976||t19053.8375449008s|6935d04907feb3d2|146|rds|vector|||5.554||
+Occurrences|stem|41e36d1dccec2f74|54d1cbd5e217753d|7ef79a70202fa04e|-1826023307||t19053.8594103925s|078523081e247e7b|52028444|rds|vector|||1861.814||
+cleaned_presences|stem||9f97b4ca04796415|a6903a15fbb5f977|519832893||t19053.9200815281s||0|rds|vector|||0.71|the condition has length  1 and only the first element will be used|matricaria_recutitacladoniaparapholis_strigosajuncus_subnodulosussphagnum_ripariumsanicula_europaeacarex_vesicariateesdalia_nudicauliscicuta_virosabromopsissalix_fragilis_x_pentandralycopus_europaeuseuphrasia_micrantha_var_micranthabrassicapotamogeton_polygonifoliusvicia_sativa_ssp_segetalisjuncus_tenuissalix_fragilis_x_triandraveronica_arvensiscampyliadelphus_elodescampanula_persicifolialichenes_spcarex_pseudocyperuscardamine_pratensispoa_trivialiscytisus_scoparius_ssp_scoparius_f_horizontalissalix_hastata_ssp_vegetaurtica_dioicacrataegus_monogynasinapis_arvensis does not exist in current working directory homederekDocumentsSDMWorkflow.
+raw_data_file|stem|b5b012f670ada597|e94a59deb680a88c|ef46db3751d8e999|2110307107|data/SpeciesMin.csv|t19054.2732444504s|17e1813002340629|93|file|vector|||0.548||
+Data_retrieval_and_cleaning|function|8c89327a226146c4||||||||||||||
+Occs|stem|306636469db23123|170cc9f03d57ac4f|98b6fae0ad9392a6|-1800337971||t19054.3735897504s|1c224537029ad1ed|600594|rds|vector|||89.669||
+raw_spatial_file|stem|3608591c0fe46afb|d31ddabee13cdad5|ef46db3751d8e999|-1460806940|data/Worldclim.tif|t19054.366779656s|5ccd108e59c2af57|2572564|file|vector|||0.639||
+Stack|stem|ff16b3bfa61f2dcd|1287b148f91e8fe6|29df9f536c292fb4|1040507979||t19054.3752585652s|c6cf456984f89b8d|2237|rds|vector|||3.579||
+Cleaned_taxonomy|stem|186451beff9c82c0|6f3e75826a0886ab|e1a75227bdd2a3a8|334555219||t19054.3752601393s|c8da580d4ab439ea|802|rds|vector|||0.001||
+Clean_Occurrences|function|bb77659b083f45ad||||||||||||||
+Taxa_validation_and_retrieval|function|96a389161299bcd5||||||||||||||
+Cleaned_data|stem||b189f26a8751d48e|7effcdf7dafd00ea|1537950896||t19054.4218009716s||0|rds|vector|||3.643||unable to find required package raster
